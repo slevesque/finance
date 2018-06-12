@@ -17,7 +17,7 @@
       <td class="text-right"><%= user_stock.last_price  %></td>
       <% if @user.id == current_user.id %>
         <% debug user_stock %>
-        <td class="text-right"><%= link_to 'Delete this stock', user_stocks_path(id: user_stock.id), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-xs btn-danger' %></td>
+        <td class="text-right"><%= link_to 'Delete this stockc from my portfolio', user_stocks_path(id: user_stock.id), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-xs btn-danger' %></td>
       <% end %>
     </tr>
   <% end %>
